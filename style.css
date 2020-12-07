@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 1500px;
+  border: 1px solid black;
+}
+
+.container__data {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  align-items: center;
+}
+.container__results {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 700px;
+  overflow: scroll;
+}
+
+.airlineCard {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.airlineCard__item {
+  padding: 1rem;
+}
